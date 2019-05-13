@@ -39,8 +39,6 @@ Instructions on how to update your PATH directory can be found here (for mac use
       1 test total, 1 passed, 0 failed
       ==============================================================================
 ```
-# TODO: Add information about python and downloading seleniumLibrary if need be. And setting the path for chromme webdriver.
-
 # Explanation of the file named liveintent-challenge.robot
 This is the file that gets executed when you run the automated test. The test case that is being run is outlined in the 'Test Cases' section. The title of the test case is 'LiveIntent Challenge'. Below that, the steps of the test are indented. The title of each of the steps are very descriptive. The actual implemementation of the steps happes in a file called 'resource.robot', which is referenced in the 'Settings' section.
 
