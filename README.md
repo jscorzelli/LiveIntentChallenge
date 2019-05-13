@@ -11,8 +11,12 @@ Here are the steps the automated test executes:
 5) Verify the existance of a button that says 'Contact Us'. As long as this button is present on the website, this step passes.
 
 # How to execute this test
-1) Clone or download this git respository to your local system.
-2) Download and install the Robot Framework.
+1) Clone or download this git respository to your local system. Once this step is done, you will have a directory that    contains the following three files:
+  ``` README.md ```
+  ``` liveintent-challenge.robot ```
+  ``` resource.robot ```
+2) Download and install the Robot Framework. Here is where you can find information on installing the Robot Framework:
+  https://robotframework.org/#documentation
 3) In a terminal window, navigate to the location where you cloned the git respository.
 4) In order to run the test, execute the following commands:
   ```robot liveintent-challenge.robot```
