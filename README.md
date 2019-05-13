@@ -13,7 +13,7 @@ Here are the steps the automated test executes:
 # Prerequisites for executing this test
 1) You must have Python 2 or Python 3 installed on your system.
 2) Download and install the Robot Framework. Here is where you can find information on installing the Robot Framework:
-  https://robotframework.org/#documentation
+  https://github.com/robotframework/robotframework/blob/master/INSTALL.rst
 3) You must download the SeleniumLibrary web testing library for the Robot Framework. Directions to do that are here:
 https://github.com/robotframework/SeleniumLibrary#installation
 4) You must download the Chrome webdriver and update your PATH directory with the local location of the webdriver.
