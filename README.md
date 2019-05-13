@@ -16,3 +16,14 @@ Here are the steps the automated test executes:
 3) In a terminal window, navigate to the location where you cloned the git respository.
 4) In order to run the test, execute the following commands:
   ```robot liveintent-challenge.robot```
+5) When the test is complete, you will see an output like this in your terminal window:
+  ``` ==============================================================================
+      Liveintent-Challenge                                                          
+      ==============================================================================
+      LiveIntent Challenge                                                  | PASS |
+      ------------------------------------------------------------------------------
+      Liveintent-Challenge                                                  | PASS |
+      1 critical test, 1 passed, 0 failed
+      1 test total, 1 passed, 0 failed
+      ==============================================================================
+```
