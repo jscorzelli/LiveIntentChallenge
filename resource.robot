@@ -16,6 +16,7 @@ Verify existence of the 'Get Started' Button
 	Page Should Contain Element		${GET STARTED}
 
 Click on 'Get Started' Button
+	Set Browser Implicit Wait	20 seconds
 	Click Element	${GET STARTED}
 
 Verify the 'Get Started' Page URL
