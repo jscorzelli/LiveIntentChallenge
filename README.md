@@ -44,3 +44,4 @@ After you run the test, you will notice that a few extra files have been generat
 ``` log.html ```,
 ``` output.html ```, and 
 ``` report.html ```.
+These files provide in depth information about the results of the last run of the test. Every time the test is run, these files get overwritten with the most up-to-date information.
