@@ -18,7 +18,7 @@ Here are the steps the automated test executes:
 2) Download and install the Robot Framework. Here is where you can find information on installing the Robot Framework:
   https://robotframework.org/#documentation
 3) In a terminal window, navigate to the location where you cloned the git respository.
-4) In order to run the test, execute the following commands:
+4) In order to run the test, execute the following command:
   ```robot liveintent-challenge.robot```
 5) When the test is complete, you will see an output like this in your terminal window:
   ``` ==============================================================================
@@ -31,3 +31,10 @@ Here are the steps the automated test executes:
       1 test total, 1 passed, 0 failed
       ==============================================================================
 ```
+# TODO: Add information about python and downloading seleniumLibrary if need be.
+
+# Explanation of the file named liveintent-challenge.robot
+This is the file that gets executed when you run the automated test. The test case that is being run is outlined in the 'Test Cases' section. The title of the test case is 'LiveIntent Challenge'. Below that, the steps of the test are indented. The title of each of the steps are very descriptive. The actual implemementation of the steps happes in a file called 'resource.robot', which is referenced in the 'Settings' section.
+
+# Explanation of the file named resource.robot
+This is the file that contains all of the libraries, variables and keywords that are used in this automated test. The 'Library' section references the 'SeleniumLibrary', which is used to gain access to the appropriate keywords needed to run this test. The '
