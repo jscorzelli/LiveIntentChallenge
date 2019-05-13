@@ -31,10 +31,10 @@ Here are the steps the automated test executes:
       1 test total, 1 passed, 0 failed
       ==============================================================================
 ```
-# TODO: Add information about python and downloading seleniumLibrary if need be.
+# TODO: Add information about python and downloading seleniumLibrary if need be. And setting the path for chromme webdriver.
 
 # Explanation of the file named liveintent-challenge.robot
 This is the file that gets executed when you run the automated test. The test case that is being run is outlined in the 'Test Cases' section. The title of the test case is 'LiveIntent Challenge'. Below that, the steps of the test are indented. The title of each of the steps are very descriptive. The actual implemementation of the steps happes in a file called 'resource.robot', which is referenced in the 'Settings' section.
 
 # Explanation of the file named resource.robot
-This is the file that contains all of the libraries, variables and keywords that are used in this automated test. The 'Library' section references the 'SeleniumLibrary', which is used to gain access to the appropriate keywords needed to run this test. The '
+This is the file that contains all of the libraries, variables and keywords that are used in this automated test. The 'Library' section references the 'SeleniumLibrary', which is used to gain access to the appropriate keywords needed to run this test. The 'Variables' section contains all of the constants that are needed for the test. These include the URLs, and names for the web elements that the test uses. Finally, the 'Keywords' section is where each step of the test is defined. The first line of each keyword is the title, and then the indented definition are commands that are provided by the Selenium libary. Each step that is defined is called in the liveintent-challenge.robot file.
