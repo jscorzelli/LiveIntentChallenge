@@ -2,7 +2,7 @@
 Automation challenge for LiveIntent
 
 # The Test
-The task at hand was to create an automated test, that verifies a piece of funtionality on the LiveIntent company website.
+The task at hand was to create an automated test, which verifies a piece of funtionality on the LiveIntent company website.
 Here are the steps the automated test executes:
 1) Naviage to the LiveIntent company website (https://liveintent.com/).
 2) Verify the existence of a button that says 'Get Started'. As long as this button is present on the website, this step      passes.
