@@ -10,6 +10,14 @@ Here are the steps the automated test executes:
 4) Verify the URL after clicking on the 'Get Started' button. The expectation is the URL will be https://liveintent.com/free-evaluation/.
 5) Verify the existance of a button that says 'Contact Us'. As long as this button is present on the website, this step passes.
 
+# Prerequisites for executing this test
+1) You must have Python 2 or Python 3 installed on your system.
+2) You must download the SeleniumLibrary web testing library for the Robot Framework. Directions to do that are here:
+https://github.com/robotframework/SeleniumLibrary#installation
+3) You must download the Chrome webdriver and update your PATH directory with the local location of the webdriver.
+Instructions on how to download the driver can be found here: https://github.com/robotframework/SeleniumLibrary/#browser-drivers
+Instructions on how to update your PATH directory can be found here (for mac users): https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/
+
 # How to execute this test
 1) Clone or download this git respository to your local system. Once this step is done, you will have a directory that    contains the following three files:
   ``` README.md ```
