@@ -16,7 +16,6 @@ Here are the steps the automated test executes:
 https://github.com/robotframework/SeleniumLibrary#installation
 3) You must download the Chrome webdriver and update your PATH directory with the local location of the webdriver.
 Instructions on how to download the driver can be found here: https://github.com/robotframework/SeleniumLibrary/#browser-drivers.
-
 Instructions on how to update your PATH directory can be found here (for mac users): https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/
 
 # How to execute this test
