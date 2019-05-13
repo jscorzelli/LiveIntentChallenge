@@ -12,9 +12,11 @@ Here are the steps the automated test executes:
 
 # Prerequisites for executing this test
 1) You must have Python 2 or Python 3 installed on your system.
-2) You must download the SeleniumLibrary web testing library for the Robot Framework. Directions to do that are here:
+2) Download and install the Robot Framework. Here is where you can find information on installing the Robot Framework:
+  https://robotframework.org/#documentation
+3) You must download the SeleniumLibrary web testing library for the Robot Framework. Directions to do that are here:
 https://github.com/robotframework/SeleniumLibrary#installation
-3) You must download the Chrome webdriver and update your PATH directory with the local location of the webdriver.
+4) You must download the Chrome webdriver and update your PATH directory with the local location of the webdriver.
 Instructions on how to download the driver can be found here: https://github.com/robotframework/SeleniumLibrary/#browser-drivers.
 Instructions on how to update your PATH directory can be found here (for mac users): https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/
 
@@ -23,12 +25,10 @@ Instructions on how to update your PATH directory can be found here (for mac use
   ``` README.md ```
   ``` liveintent-challenge.robot ```
   ``` resource.robot ```
-2) Download and install the Robot Framework. Here is where you can find information on installing the Robot Framework:
-  https://robotframework.org/#documentation
-3) In a terminal window, navigate to the location where you cloned the git respository.
-4) In order to run the test, execute the following command:
+2) In a terminal window, navigate to the location where you cloned the git respository.
+3) In order to run the test, execute the following command:
   ```robot liveintent-challenge.robot```
-5) When the test is complete, you will see an output like this in your terminal window:
+4) When the test is complete, you will see an output like this in your terminal window:
   ``` ==============================================================================
       Liveintent-Challenge                                                          
       ==============================================================================
