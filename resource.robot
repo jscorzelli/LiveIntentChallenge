@@ -17,6 +17,7 @@ Verify existence of the 'Get Started' Button
 
 Click on 'Get Started' Button
 	Maximize Browser Window
+	Press Keys 	${GET STARTED}	DOWN
 	${LOCATION} = 	Get Location
 	Run Keyword if	'${LOCATION}' != '${GET STARTED URL}'	Press Keys 	${GET STARTED}	ENTER
 
