@@ -51,3 +51,15 @@ After you run the test, you will notice that a few extra files have been generat
 ``` output.html ```, and 
 ``` report.html ```.
 These files provide in depth information about the results of the last run of the test. Every time the test is run, these files get overwritten with the most up-to-date information.
+
+# Obstacles
+One major obstacle I hit while completing this task was implementing the step where the test clicks on the 'GET STARTED' button. I implemented it in a way where I used the 'Click' functionality that is made available from the Selenium library. This method worked on my personal laptop, but did not work when I ran the test on a different computer. On the second computer, the cookie consent message that appears on the website was blocking the 'GET STARTED' button from coming into focus. As a result, the Selenium library was having trouble locating it in order to click on it. After doing further research, and running a few smoke tests, I came to my current solution:
+``` Click on 'Get Started' Button
+	  Maximize Browser Window
+	  Press Keys 	${GET STARTED}	DOWN
+	  ${LOCATION} = 	Get Location
+	  Run Keyword if	'${LOCATION}' != '${GET STARTED URL}'	Press Keys 	${GET STARTED}	ENTER
+```
+In this solution, the test will first maximize the browser window. Then it will press the DOWN arrow kew. After that, the test will take note of the current URL. If the URL does not equal a certain value, the test will press the ENTER key. This method has proven to be successful on multiple computers.
+ 
+  
