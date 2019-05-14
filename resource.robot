@@ -4,9 +4,9 @@ Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}			chrome
 ${URL}				https://liveintent.com/
-${GET STARTED}		class:home-header-btn
+${GET STARTED}		css:.home-header-btn
 ${GET STARTED URL}	https://liveintent.com/free-evaluation/
-${CONTACT US}		class:header-cta
+${CONTACT US}		css:.header-cta
 
 *** Keywords ***
 Open Browser To LiveIntent Page
@@ -17,8 +17,8 @@ Verify existence of the 'Get Started' Button
 
 Click on 'Get Started' Button
 	Maximize Browser Window
-	Set Browser Implicit Wait	20 seconds
-	Click Element	${GET STARTED}
+	${LOCATION} = 	Get Location
+	Run Keyword if	'${LOCATION}' != '${GET STARTED URL}'	Press Keys 	${GET STARTED}	ENTER
 
 Verify the 'Get Started' Page URL
 	Location Should Be 		${GET STARTED URL}
