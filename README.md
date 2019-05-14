@@ -43,14 +43,14 @@ Instructions on how to update your PATH directory can be found here (for mac use
 This is the file that gets executed when you run the automated test. The test case that is being run is outlined in the 'Test Cases' section. The title of the test case is 'LiveIntent Challenge'. Below that, the steps of the test are indented. The title of each of the steps are very descriptive. The actual implemementation of the steps happens in a file called 'resource.robot', which is referenced in the 'Settings' section.
 
 # Explanation of the file named resource.robot
-This is the file that contains all of the libraries, variables and keywords that are used in this automated test. The 'Library' section references the 'SeleniumLibrary', which is used to gain access to the appropriate keywords needed to run this test. The 'Variables' section contains all of the constants that are needed for the test. These include the URLs, web browser of choice, and names for the web elements that the test uses. Finally, the 'Keywords' section is where each step of the test is defined. The first line of each keyword is the title, and then the indented definition is made up by commands that are provided by the Selenium libary. Each step that is defined is called in the liveintent-challenge.robot file.
+This is the file that contains all of the libraries, variables and keywords that are used in this automated test. The 'Library' section references the 'SeleniumLibrary', which is used to gain access to the appropriate keywords needed to run this test. The 'Variables' section contains all of the constants that are needed for the test. These include the URLs, web browser of choice, and names for the web elements that the test uses. Finally, the 'Keywords' section is where each step of the test is defined. The first line of each keyword is the title, and then the indented definition is made up of commands that are provided by the Selenium library. Each step that is defined is called in the liveintent-challenge.robot file.
 
 # Extra files
 After you run the test, you will notice that a few extra files have been generated. These files are called: 
 ``` log.html ```,
 ``` output.html ```, and 
 ``` report.html ```.
-These files provide in depth information about the results of the last run of the test. Every time the test is run, these files get overwritten with the most up-to-date information.
+These files provide in-depth information about the results of the last run of the test. Every time the test is run, these files get overwritten with the most up-to-date information.
 
 # Obstacles
 One major obstacle I hit while completing this task was implementing the step where the test clicks on the 'GET STARTED' button. I implemented it in a way where I used the 'Click Element' functionality that is made available from the Selenium library. This method worked on my personal laptop, but did not work when I ran the test on a different computer. On the second computer, the cookie consent message that appears on the website was blocking the 'GET STARTED' button from coming into focus. As a result, the Selenium library was having trouble locating it in order to click on it. After doing further research, and running a few smoke tests, I came to my current solution:
